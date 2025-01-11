@@ -3,20 +3,21 @@
   align-items: center;
   flex-direction: column;
   gap: 35px;
+  margin-bottom: 150px;
 }
 
 .hero img {
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
-.hero h1 {
+.hero h3 {
   text-align: center;
   width: 70%;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 600;
 }
 
-.hero h1 span {
+.hero h3 span {
   background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -32,29 +33,36 @@
 
 .hero-action {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 25px;
   font-size: 24px;
   font-weight: 500;
-  margin-bottom: 50px;
 }
 
 .hero-connect {
-  padding: 25px 45px;
+  border: none;
+  color: white;
   border-radius: 50px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+  font-size: 22px;
+  padding: 15px 50px;
   cursor: pointer;
-}
-
-.hero-resume {
-  padding: 25px 75px;
-  border-radius: 50px;
-  border: 2px solid #fff;
-  cursor: pointer;
+  transition: 0.3s;
 }
 
 .hero-connect:hover {
-  border: 2px solid white;
+  filter: brightness(1.2);
+}
+
+.hero-resume {
+  border: none;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 15px 50px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .hero-resume:hover {
@@ -63,12 +71,11 @@
 
 @media (max-width: 768px) {
   .hero img {
-    margin-top: 120px;
+    margin-top: 80px;
     width: 260px;
   }
 
-  .hero h1 {
-    margin-top: 50px;
+  .hero h3 {
     width: 90%;
     font-size: 50px;
   }
@@ -81,10 +88,10 @@
   }
 
   .hero-action {
+    flex-direction: column;
     gap: 16px;
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 50px;
   }
 
   .hero-connect {

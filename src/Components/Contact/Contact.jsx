@@ -29,17 +29,17 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="contact">
-      <div className="contact-title">
+    <div  className="contact">
+      <div id="contact" className="contact-title">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="" />
       </div>
       <div className="contact-section">
         <div className="contact-left">
-          <h1>Lets talk</h1>
+          <h1>Let&apos;s Talk</h1>
           <p>
-            I am currently working in XXX company, will soon let you know once,
-            i am available to take up projects
+            I am currently working for a famous mobility company.
+            Got an idea or just want to say Hi? Drop a message!
           </p>
           <div className="contact-details">
             <div className="contact-detail">

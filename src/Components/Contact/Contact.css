@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
-  margin: 80px 170px;
+  gap: 100px;
+  margin: 0 170px;
 }
 
 .contact-title {
@@ -68,7 +68,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 30px;
+  gap: 20px;
 }
 
 .contact-right label {
@@ -79,8 +79,8 @@
 
 .contact-right input {
   border: none;
-  width: 700px;
-  height: 78px;
+  width: 600px;
+  height: 60px;
   padding-left: 20px;
   border-radius: 4px;
   background: #32323c;
@@ -90,9 +90,9 @@
 }
 
 .contact-right textarea {
-  width: 650px;
+  width: 600px;
   border: none;
-  padding: 25px;
+  padding: 25px 0 0  20px;
   border-radius: 4px;
   background: #32323c;
   color: #a0a0a0;
@@ -106,15 +106,14 @@
   border-radius: 50px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
   font-size: 22px;
-  padding: 20px 60px;
-  margin-bottom: 50px;
+  padding: 15px 50px;
+  margin-bottom: 30px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .contact-submit:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
+  filter: brightness(1.2);
 }
 
 @media (max-width: 768px) {
@@ -136,6 +135,7 @@
   }
 
   .contact-section {
+    gap: 60px;
     flex-direction: column;
   }
 

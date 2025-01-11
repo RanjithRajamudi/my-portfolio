@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
-  margin: 80px 170px;
+  gap: 100px;
+  margin: 0 170px 150px;
 }
 
 .services-title {
@@ -25,10 +25,9 @@
 }
 
 .services-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 40px;
-  margin-bottom: 80px;
 }
 
 .services-format {
@@ -100,6 +99,10 @@
   .services-title img {
     width: 130px;
     right: -20px;
+  }
+
+  .services-container {
+    flex-direction: column;
   }
 
   .services-format {
