@@ -7,6 +7,10 @@
 }
 
 .hero img {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  border: none;
   margin-top: 80px;
 }
 
@@ -79,6 +83,7 @@
 @media (max-width: 768px) {
   .hero img {
     margin-top: 80px;
+    height: 260px;
     width: 260px;
   }
 
