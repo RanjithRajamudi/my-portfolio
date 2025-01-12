@@ -1,4 +1,4 @@
-import theme_pattern from "../../assets/theme_pattern.svg";
+import { motion } from "motion/react";
 import mail_icon from "../../assets/mail_icon.svg";
 import location_icon from "../../assets/location_icon.svg";
 import call_icon from "../../assets/call_icon.svg";
@@ -24,24 +24,44 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert(res.message)
+      alert(res.message);
     }
   };
 
   return (
-    <div  className="contact">
+    <div className="contact">
       <div id="contact" className="contact-title">
-        <h1>Get in touch</h1>
-        <img src={theme_pattern} alt="" />
+        <motion.h1
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          Get in touch
+        </motion.h1>
       </div>
       <div className="contact-section">
         <div className="contact-left">
-          <h1>Let&apos;s Talk</h1>
-          <p>
-            I am currently working for a famous mobility company.
-            Got an idea or just want to say Hi? Drop a message!
-          </p>
-          <div className="contact-details">
+          <motion.h3
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            Let&apos;s Talk
+          </motion.h3>
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            I am currently working for a famous mobility company. Got an idea or
+            just want to say Hi? Drop a message!
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="contact-details"
+          >
             <div className="contact-detail">
               <img src={mail_icon} alt="" />
               <p>ranjithrajmudigowda@gmail.com</p>
@@ -54,22 +74,43 @@ const Contact = () => {
               <img src={location_icon} alt="" />
               <p>Bangalore, India</p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <form onSubmit={onSubmit} className="contact-right">
-          <label htmlFor="">Your Name</label>
-          <input type="text" placeholder="Enter your name" name="name" />
-          <label htmlFor="">Your Email</label>
-          <input type="email" placeholder="Enter your email" name="email" />
-          <label htmlFor="">Write your message here</label>
-          <textarea
+          <motion.input
+            initial={{ opacity: 0, x: 70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+          />
+
+          <motion.input
+            initial={{ opacity: 0, x: 70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+          />
+          <motion.textarea
+            initial={{ opacity: 0, x: 70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             name="message"
             rows="8"
             placeholder="Enter your message"
-          ></textarea>
-          <button type="submit" className="contact-submit">
+          ></motion.textarea>
+          <motion.button
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            type="submit"
+            className="contact-submit"
+          >
             Submit now
-          </button>
+          </motion.button>
         </form>
       </div>
     </div>

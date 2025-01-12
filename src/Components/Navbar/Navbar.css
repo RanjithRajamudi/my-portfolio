@@ -7,8 +7,20 @@
   position: sticky;
   top: 0; /* Position the navbar at the top */
   z-index: 3; /* Ensure it appears above other elements */
-  background:  #161513;
+  background: #161513;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
+.navbar h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.navbar h1 span {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-menu {
@@ -24,7 +36,16 @@
   color: white;
 }
 
-.anchor-link:hover {
+.anchor-link-selected {
+  text-decoration: none;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.anchor-link:hover,
+.anchor-link-selected:hover {
   transform: scale(1.2);
   transition: 0.5s;
 }
@@ -57,16 +78,19 @@
 }
 
 .nav-mob-close {
+  cursor: pointer;
   display: none;
 }
 
 .nav-mob-open {
+  cursor: pointer;
   display: none;
 }
 
 @media (max-width: 768px) {
   .navbar {
-    margin: 20px 50px;
+    justify-content: flex-start;
+    padding: 20px 30px;
   }
 
   .nav-connect {
@@ -74,12 +98,14 @@
   }
 
   .nav-mob-open {
+    cursor: pointer;
     display: block;
     position: fixed;
     right: 30px;
   }
 
   .nav-mob-close {
+    cursor: pointer;
     display: block;
     position: relative;
     top: 30px;

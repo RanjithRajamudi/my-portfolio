@@ -14,14 +14,7 @@
 .contact-title h1 {
   padding: 0px 30px;
   font-size: 80px;
-  font-weight: 600;
-}
-
-.contact-title img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+  font-weight: 400;
 }
 
 .contact-section {
@@ -34,8 +27,8 @@
   flex-direction: column;
   gap: 30px;
 }
-.contact-left h1 {
-  font-size: 80px;
+.contact-left h3 {
+  font-size: 60px;
   font-weight: 700;
   background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
   background-clip: text;
@@ -68,7 +61,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 20px;
+  gap: 30px;
 }
 
 .contact-right label {
@@ -92,7 +85,7 @@
 .contact-right textarea {
   width: 600px;
   border: none;
-  padding: 25px 0 0  20px;
+  padding: 25px 0 0 20px;
   border-radius: 4px;
   background: #32323c;
   color: #a0a0a0;
@@ -107,7 +100,7 @@
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
   font-size: 22px;
   padding: 15px 50px;
-  margin-bottom: 30px;
+  margin: 10px 0 40px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -129,17 +122,12 @@
     font-weight: 600;
   }
 
-  .contact-title img {
-    width: 130px;
-    margin-right: -20px;
-  }
-
   .contact-section {
     gap: 60px;
     flex-direction: column;
   }
 
-  .contact-left h1 {
+  .contact-left h3 {
     font-size: 54px;
   }
 
@@ -158,7 +146,7 @@
   .contact-right label {
     font-size: 20px;
   }
-  
+
   .contact-right input {
     width: 100%;
     font-size: 20px;
