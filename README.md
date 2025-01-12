@@ -4,19 +4,27 @@
 
 To run this app locally, please clone the project.
 
-`git clone https://github.com/RanjithRajamudi/my-portfolio.git`
+```bash
+git clone "https://github.com/RanjithRajamudi/my-portfolio.git"
+```
 
-Navigate to project directory
+Navigate to project directory.
 
-`cd my-portfolio`
+```bash
+cd my-portfolio
+```
 
-Install dependencies
+Install dependencies.
 
-`npm install`
+```bash
+npm install
+```
 
-Start local server
+Start local server.
 
-`npm run dev`
+```bash
+npm run dev
+```
 
 You will now see the project running on [localhost](http://localhost:5173/).
 
