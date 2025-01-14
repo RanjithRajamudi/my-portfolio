@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 100px;
-  margin: 0 170px 150px;
+  margin: 0 150px 150px;
 }
 
 .services-title {
@@ -20,7 +20,7 @@
 .services-container {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 60px;
 }
 
 .services-format {
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding: 60px;
+  padding: 50px;
   border-radius: 10px;
   border: 2px solid white;
   transition: 0.4s;
@@ -77,11 +77,34 @@
   margin-top: 20px;
 }
 
+@media (max-width: 1200px) {
+  .services {
+    margin: 0 75px 150px;
+  }
+  .services-format {
+    padding: 60px 30px;
+  }
+  .services-container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .services {
+    margin: 0 40px 150px;
+  }
+  .services-format {
+    padding: 40px 15px;
+  }
+  .services-container {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .services {
     align-items: start;
     gap: 70px;
-    margin: 20px 70px;
   }
 
   .services-title h1 {
@@ -91,6 +114,8 @@
 
   .services-container {
     flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
   .services-format {
@@ -110,9 +135,5 @@
 
   .services-readmore img {
     width: 20px;
-  }
-  .services-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
   }
 }

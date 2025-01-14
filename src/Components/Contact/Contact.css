@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 100px;
-  margin: 0 170px;
+  margin: 0 150px 150px;
 }
 
 .contact-title {
@@ -19,7 +19,7 @@
 
 .contact-section {
   display: flex;
-  gap: 150px;
+  gap: 200px;
 }
 
 .contact-left {
@@ -109,10 +109,42 @@
   filter: brightness(1.2);
 }
 
+@media (max-width: 1600px) {
+  .contact-section {
+    gap: 150px;
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    margin: 0 75px 150px;
+  }
+  .contact-section {
+    gap: 60px;
+  }
+  .contact-right input,
+  .contact-right textarea {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    margin: 0 40px 150px;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 768px) {
   .contact {
     gap: 50px;
-    margin: 50px 70px;
     align-items: start;
   }
 
@@ -148,12 +180,12 @@
   }
 
   .contact-right input {
-    width: 100%;
+    width: 90%;
     font-size: 20px;
   }
 
   .contact-right textarea {
-    width: 95%;
+    width: 90%;
     font-size: 20px;
   }
 

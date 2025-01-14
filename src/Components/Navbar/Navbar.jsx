@@ -16,6 +16,11 @@ const Navbar = () => {
     menuRef.current.style.right = "-350px";
   };
 
+  const handleOnClick = (section) => {
+    setMenu(section);
+    closeMenu();
+  };
+
   return (
     <div className="navbar">
       <h1>
@@ -34,9 +39,8 @@ const Navbar = () => {
             className={menu === "home" ? "anchor-link-selected" : "anchor-link"}
             href="#home"
           >
-            <p onClick={() => setMenu("home")}>Home</p>
+            <p onClick={() => handleOnClick("home")}>Home</p>
           </AnchorLink>
-          {/* {menu === "home" ? <img src={underline} alt="" /> : <></>} */}
         </li>
         <li>
           <AnchorLink
@@ -46,7 +50,7 @@ const Navbar = () => {
             offset={80}
             href="#about"
           >
-            <p onClick={() => setMenu("about")}>About</p>
+            <p onClick={() => handleOnClick("about")}>About</p>
           </AnchorLink>
         </li>
         <li>
@@ -57,7 +61,7 @@ const Navbar = () => {
             offset={80}
             href="#services"
           >
-            <p onClick={() => setMenu("services")}>Services</p>
+            <p onClick={() => handleOnClick("services")}>Services</p>
           </AnchorLink>
         </li>
         <li>
@@ -66,16 +70,18 @@ const Navbar = () => {
             offset={80}
             href="#works"
           >
-            <p onClick={() => setMenu("work")}>Projects</p>
+            <p onClick={() => handleOnClick("work")}>Projects</p>
           </AnchorLink>
         </li>
         <li>
           <AnchorLink
-            className={menu === "contact" ? "anchor-link-selected" : "anchor-link"}
+            className={
+              menu === "contact" ? "anchor-link-selected" : "anchor-link"
+            }
             offset={80}
             href="#contact"
           >
-            <p onClick={() => setMenu("contact")}>Contact</p>
+            <p onClick={() => handleOnClick("contact")}>Contact</p>
           </AnchorLink>
         </li>
       </ul>

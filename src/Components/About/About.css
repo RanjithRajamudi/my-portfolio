@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 100px;
-  margin: 0 170px 150px;
+  margin: 0 150px 150px;
 }
 
 .about-title {
@@ -108,10 +108,21 @@
   font-weight: 500;
 }
 
+@media (max-width: 1200px) {
+  .about {
+    margin: 0 75px 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    margin: 0 40px 150px;
+  }
+}
+
 @media (max-width: 768px) {
   .about {
     gap: 80px;
-    margin: 50px 70px;
     align-items: start;
   }
 

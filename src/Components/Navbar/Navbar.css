@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 170px;
+  padding: 20px 150px;
 
   position: sticky;
   top: 0; /* Position the navbar at the top */
@@ -12,7 +12,7 @@
 }
 
 .navbar h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -71,17 +71,52 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .navbar {
-    justify-content: flex-start;
-    padding: 20px 30px;
+    padding: 20px 75px;
+  }
+  .nav-menu { 
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 40px;
   }
 
   .nav-mob-open {
     cursor: pointer;
     display: block;
     position: fixed;
-    right: 30px;
+    right: 40px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .nav-mob-open {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    right: 60px;
   }
 
   .nav-mob-close {
@@ -115,46 +150,4 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .navbar {
-    padding: 20px 80px;
-  }
-  .nav-menu { 
-    gap: 40px;
-  }
-}
 
-@media (max-width: 900px) {
-  .navbar {
-    padding: 20px 30px;
-  }
-
-  .nav-mob-open {
-    cursor: pointer;
-    display: block;
-    position: fixed;
-    right: 30px;
-  }
-
-  .nav-menu {
-    position: fixed;
-    flex-direction: column;
-    align-items: start;
-    top: 0;
-    gap: 30px;
-    background-color: #1f0016;
-    width: 350px;
-    height: 100%;
-    z-index: 2;
-    transition: right 0.5s;
-    right: -350px;
-  }
-}
-
-
-
-/* @media (max-width: 480px) {
-  .navbar {
-    padding: 20px 30px;
-  }
-} */
