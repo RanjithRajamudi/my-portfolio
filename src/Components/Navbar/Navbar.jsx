@@ -79,11 +79,6 @@ const Navbar = () => {
           </AnchorLink>
         </li>
       </ul>
-      {/* <button className="nav-connect">
-        <AnchorLink className="anchor-link" offset={80} href="#contact">
-          Connect with me
-        </AnchorLink>
-      </button> */}
     </div>
   );
 };

@@ -12,7 +12,7 @@
 }
 
 .navbar h1 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -62,28 +62,12 @@
   margin: auto;
 }
 
-.nav-connect {
-  border: none;
-  color: white;
-  border-radius: 50px;
-  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
-  font-size: 22px;
-  padding: 15px 50px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.nav-connect:hover {
-  filter: brightness(1.2);
-}
-
 .nav-mob-close {
   cursor: pointer;
   display: none;
 }
 
 .nav-mob-open {
-  cursor: pointer;
   display: none;
 }
 
@@ -91,10 +75,6 @@
   .navbar {
     justify-content: flex-start;
     padding: 20px 30px;
-  }
-
-  .nav-connect {
-    display: none;
   }
 
   .nav-mob-open {
@@ -134,3 +114,47 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 20px 80px;
+  }
+  .nav-menu { 
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .nav-mob-open {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+}
+
+
+
+/* @media (max-width: 480px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+} */
