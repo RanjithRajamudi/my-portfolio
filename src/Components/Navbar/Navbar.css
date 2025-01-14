@@ -88,8 +88,9 @@
   .nav-mob-open {
     cursor: pointer;
     display: block;
-    position: fixed;
+    position: absolute;
     right: 40px;
+    z-index: 9999;
   }
 
   .nav-menu {
@@ -115,8 +116,8 @@
   .nav-mob-open {
     cursor: pointer;
     display: block;
-    position: fixed;
-    right: 60px;
+    position: absolute;
+    right: 40px;
   }
 
   .nav-mob-close {

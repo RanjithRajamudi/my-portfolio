@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <h1>
-        Ranji<span className="heart">th.</span>
+        Ranji<span>th.</span>
       </h1>
       <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
       <ul ref={menuRef} className="nav-menu">
