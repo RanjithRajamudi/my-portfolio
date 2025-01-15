@@ -54,24 +54,15 @@ const Hero = () => {
         And I&apos;m a <span ref={textRef}></span>
       </motion.h3>
       <div className="hero-action">
-        <motion.button
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          className="hero-connect"
-        >
+        <button className="hero-connect">
           <AnchorLink className="anchor-link" offset={50} href="#contact">
             Connect with me
           </AnchorLink>
-        </motion.button>
-        <motion.button
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
-          className="hero-resume"
+        </button>
+        <button className="hero-resume"
         >
           My resume
-        </motion.button>
+        </button>
       </div>
     </div>
   );

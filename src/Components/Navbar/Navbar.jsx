@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
-import menu_open from "../../assets/menu_open.svg";
-import menu_close from "../../assets/menu_close.svg";
+import { FaXmark, FaAlignRight } from "react-icons/fa6";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Navbar.css";
 
@@ -26,14 +25,9 @@ const Navbar = () => {
       <h1>
         Ranji<span>th.</span>
       </h1>
-      <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
+      <FaAlignRight size={35} onClick={openMenu} className="nav-mob-open" />
       <ul ref={menuRef} className="nav-menu">
-        <img
-          src={menu_close}
-          onClick={closeMenu}
-          alt=""
-          className="nav-mob-close"
-        />
+        <FaXmark size={40} onClick={closeMenu} className="nav-mob-close" />
         <li>
           <AnchorLink
             className={menu === "home" ? "anchor-link-selected" : "anchor-link"}

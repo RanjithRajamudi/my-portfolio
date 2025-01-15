@@ -25,12 +25,7 @@ const About = () => {
           />
         </div>
         <div className="about-right">
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="about-para"
-          >
+          <div className="about-para">
             <p>
               I&apos;m a passionate Web Developer with 6 years of experience
               crafting intuitive and visually appealing user interfaces. I
@@ -43,7 +38,7 @@ const About = () => {
               experience but also in the enthusiasm and dedication whith which I
               bring life to each project.
             </p>
-          </motion.div>
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
