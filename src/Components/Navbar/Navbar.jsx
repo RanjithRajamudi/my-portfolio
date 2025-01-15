@@ -27,7 +27,7 @@ const Navbar = () => {
       </h1>
       <FaAlignRight size={35} onClick={openMenu} className="nav-mob-open" />
       <ul ref={menuRef} className="nav-menu">
-        <FaXmark size={40} onClick={closeMenu} className="nav-mob-close" />
+        <FaXmark size={45} onClick={closeMenu} className="nav-mob-close" />
         <li>
           <AnchorLink
             className={menu === "home" ? "anchor-link-selected" : "anchor-link"}

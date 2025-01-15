@@ -52,7 +52,7 @@
 @media (max-width: 768px) {
   .work {
     gap: 50px;
-    margin: 50px 70px;
+    margin: 0 24px 150px;
     align-items: start;
   }
 

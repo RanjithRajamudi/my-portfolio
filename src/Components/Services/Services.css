@@ -103,6 +103,7 @@
 
 @media (max-width: 768px) {
   .services {
+    margin: 0 24px 150px;
     align-items: start;
     gap: 70px;
   }

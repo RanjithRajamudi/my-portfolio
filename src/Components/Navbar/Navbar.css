@@ -109,6 +109,7 @@
 
 @media (max-width: 768px) {
   .navbar {
+    padding: 20px 24px;
     justify-content: flex-start;
   }
 
@@ -116,15 +117,15 @@
     cursor: pointer;
     display: block;
     position: absolute;
-    right: 40px;
+    right: 24px;
   }
 
   .nav-mob-close {
     cursor: pointer;
     display: block;
     position: relative;
-    top: 30px;
-    left: 275px;
+    top: 22px;
+    left: 220px;
   }
 
   .nav-menu {
@@ -134,7 +135,7 @@
     top: 0;
     gap: 30px;
     background-color: #1f0016;
-    width: 350px;
+    width: 300px;
     height: 100%;
     z-index: 2;
     transition: right 0.5s;

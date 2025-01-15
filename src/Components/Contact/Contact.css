@@ -69,7 +69,7 @@
 }
 
 .contact-right input {
-  border: none;
+  border: 1px solid #32323c;
   width: 600px;
   height: 60px;
   padding-left: 20px;
@@ -79,20 +79,22 @@
   font-family: "Outfit";
   font-size: 20px;
 }
-.contact-right input:focus {
-  border-color: #b415ff;
-  outline: none;
-}
 
 .contact-right textarea {
   width: 600px;
-  border: none;
+  border: 1px solid #32323c;
   padding: 25px 0 0 20px;
   border-radius: 4px;
   background: #32323c;
   color: white;
   font-family: "Outfit";
   font-size: 20px;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border-color: #b415ff;
+  outline: none;
 }
 
 .contact-submit {
@@ -115,7 +117,7 @@
   .contact-section {
     gap: 150px;
   }
-  
+
   .contact-right input,
   .contact-right textarea {
     width: 450px;
@@ -142,10 +144,16 @@
   .contact-section {
     flex-direction: column;
   }
+
+  .contact-right input,
+  .contact-right textarea {
+    width: 600px;
+  }
 }
 
 @media (max-width: 768px) {
   .contact {
+    margin: 0 24px;
     gap: 50px;
     align-items: start;
   }

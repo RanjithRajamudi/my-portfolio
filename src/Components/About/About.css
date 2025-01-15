@@ -112,6 +112,10 @@
   .about {
     margin: 0 75px 150px;
   }
+
+  .about-left {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -122,6 +126,7 @@
 
 @media (max-width: 768px) {
   .about {
+    margin: 0 24px 150px;
     gap: 80px;
     align-items: start;
   }
@@ -173,11 +178,5 @@
   .about-achievement p {
     text-align: center;
     font-size: 16px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .about-left {
-    display: none;
   }
 }
