@@ -25,8 +25,9 @@
 .contact-left {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
+
 .contact-left h3 {
   font-size: 60px;
   font-weight: 700;
@@ -45,7 +46,7 @@
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 16px;
   font-size: 22px;
 }
 
@@ -53,6 +54,39 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.social-connection {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-connection h4 {
+  font-size: 28px;
+  font-weight: 400;
+  background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-links {
+  gap: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .contact-right {
@@ -179,6 +213,15 @@
 
   .contact-detail {
     gap: 20px;
+  }
+
+  .social-connection h4 {
+    font-size: 28px;
+    font-weight: 400;
+    background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .contact-right label {

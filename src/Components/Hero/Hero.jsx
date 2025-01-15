@@ -51,7 +51,7 @@ const Hero = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
-        And I&apos;m a <span ref={textRef}></span>
+        I am a <span ref={textRef}></span>
       </motion.h3>
       <div className="hero-action">
         <button className="hero-connect">
@@ -59,10 +59,7 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </button>
-        <button className="hero-resume"
-        >
-          My resume
-        </button>
+        <button className="hero-resume">My resume</button>
       </div>
     </div>
   );

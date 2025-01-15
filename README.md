@@ -32,5 +32,3 @@ To-Do's
 
 - Add Day/Night Mode theme based.
 - Scroll to particular sections without using the react-smooth-scroll lib.
-- Make Navbar tab more responsive.
-- Add your photo on hero section.

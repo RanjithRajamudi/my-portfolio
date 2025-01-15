@@ -1,4 +1,10 @@
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 import "./Contact.css";
 
 const Contact = () => {
@@ -28,9 +34,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div id="contact" className="contact-title">
-        <h1>
-          Get in touch
-        </h1>
+        <h1>Get in touch</h1>
       </div>
       <div className="contact-section">
         <div className="contact-left">
@@ -51,6 +55,21 @@ const Contact = () => {
             <div className="contact-detail">
               <FaMapMarkerAlt size={25} />
               <p>Bangalore, India</p>
+            </div>
+          </div>
+          <div className="social-connection">
+            <h4>Stay Connected</h4>
+            <div className="social-links">
+              <div className="link">
+                <a href="https://www.linkedin.com/in/ranjith-rajamudi-gowda/">
+                  <FaLinkedin size={30} />
+                </a>
+              </div>
+              <div className="link">
+                <a href="https://github.com/RanjithRajamudi">
+                  <FaGithub size={30} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

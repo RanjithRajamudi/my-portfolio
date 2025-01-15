@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import profile_img from "../../assets/test_about.png";
 import "./About.css";
 
@@ -6,23 +5,11 @@ const About = () => {
   return (
     <div id="about" className="about">
       <div className="about-title">
-        <motion.h1
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-        >
-          About me
-        </motion.h1>
+        <h1>About me</h1>
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <motion.img
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ type: "tween", duration: 0.5, delay: 0.4 }}
-            src={profile_img}
-            alt=""
-          />
+          <img src={profile_img} alt="" />
         </div>
         <div className="about-right">
           <div className="about-para">
@@ -39,12 +26,7 @@ const About = () => {
               bring life to each project.
             </p>
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="about-skills"
-          >
+          <div className="about-skills">
             <div className="about-skill">
               <p>HTML&CSS</p>
               <hr style={{ width: "50%" }} />
@@ -61,7 +43,7 @@ const About = () => {
               <p>Typescript</p>
               <hr style={{ width: "50%" }} />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
