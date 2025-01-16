@@ -18,7 +18,7 @@ const Hero = () => {
         backDelay: 1500,
         backSpeed: 60,
         strings: [
-          "Front End Developer",
+          "FrontEnd Developer",
           "Web Developer",
           "Web Designer",
           "React Developer",

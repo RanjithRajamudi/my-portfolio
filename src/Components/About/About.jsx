@@ -22,7 +22,7 @@ const About = () => {
             </p>
             <p>
               My Passion for frontend development is not only reflected in my
-              experience but also in the enthusiasm and dedication whith which I
+              experience but also in the enthusiasm and dedication with which I
               bring life to each project.
             </p>
           </div>
