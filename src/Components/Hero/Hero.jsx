@@ -1,7 +1,7 @@
 import { init } from "ityped";
 import { motion } from "motion/react";
 import { useEffect, useRef } from "react";
-import my_image from "../../assets/my_image copy.png";
+import hero_image from "../../assets/my_image.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Hero.css";
 
@@ -36,7 +36,7 @@ const Hero = () => {
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
-        src={my_image}
+        src={hero_image}
         alt=""
       />
       <motion.h3

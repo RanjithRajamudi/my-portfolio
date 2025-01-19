@@ -1,4 +1,4 @@
-import profile_img from "../../assets/test_about.png";
+import about_image from "../../assets/about_image.png";
 import "./About.css";
 
 const About = () => {
@@ -9,7 +9,7 @@ const About = () => {
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src={profile_img} alt="" />
+          <img src={about_image} alt="" />
         </div>
         <div className="about-right">
           <div className="about-para">
