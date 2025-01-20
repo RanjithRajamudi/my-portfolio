@@ -1,6 +1,7 @@
 import { init } from "ityped";
 import { motion } from "motion/react";
 import { useEffect, useRef } from "react";
+import { FaDownload } from "react-icons/fa6";
 import hero_image from "../../assets/my_image.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Hero.css";
@@ -59,7 +60,15 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </button>
-        <button className="hero-resume">My resume</button>
+        <button className="hero-resume">
+          <a
+            className="resume-link"
+            href="https://drive.google.com/file/d/1LbkZnI-VLCc9wBN9MDeTn0T61WOnLgcb/view"
+          >
+            <span>My resume</span>
+            <FaDownload size={20} />
+          </a>
+        </button>
       </div>
     </div>
   );

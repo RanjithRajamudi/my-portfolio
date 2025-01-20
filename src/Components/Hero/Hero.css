@@ -78,6 +78,13 @@
   border-color: #b415ff;
 }
 
+.resume-link{
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
 @media (max-width: 1200px) {
   .hero {
     margin: 0 75px 150px;
@@ -117,7 +124,7 @@
 
   .hero-connect,
   .hero-resume {
-    padding: 8px 20px;
+    padding: 10px 25px;
     border-radius: 40px;
   }
 }
